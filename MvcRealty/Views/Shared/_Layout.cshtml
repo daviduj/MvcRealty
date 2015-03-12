@@ -1,0 +1,72 @@
+﻿@using MvcRealty.Extensions;
+@using MvcRealty.Helpers;
+<!DOCTYPE html>
+@{
+    // Casette registration
+
+    // CSS
+    Bundles.Reference("~/Content/styles/3rd", "head");
+    Bundles.Reference("~/Content/styles/compiled", "head");
+
+    ////JavaScript
+    //// Edit bundle txt to specify order
+    //Bundles.Reference("~/Scripts/3rd/require.js", "3rd");
+
+}
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Bundles.RenderStylesheets("head")
+@*    @Scripts.Render("~/bundles/modernizr")*@
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+    <!--Here Start Loading js files-->
+    <script type="text/javascript" src=@Url.Content("~/scripts/3rd/require.js")></script>
+    @{
+        var requiredScripts = (Dictionary<string, FileInclude>)Html.ViewContext.HttpContext.Items["requireScripts"];
+        string s = String.Join("\r\n", requiredScripts.OrderBy(x => x.Value.SortOrder).Select(x => x.Value.ResourceUrl));
+    }
+    <script type="text/javascript">
+        require(["@Url.Content("~/Scripts/common/common.js")"], function () {
+            @Html.Raw(s)
+        });
+    </script>
+
+    @RenderSection("scripts", required: false)
+    @Html.GetScriptIncludes()
+    @Html.GetScriptBlocks()
+    @Html.GetReadyScripts()
+
+</body>
+</html>
