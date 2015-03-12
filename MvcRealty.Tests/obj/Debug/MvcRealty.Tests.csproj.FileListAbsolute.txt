@@ -48,3 +48,6 @@ C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty.Tests\bin\Debug\System.Net.Ht
 C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty.Tests\obj\Debug\MvcRealty.Tests.csprojResolveAssemblyReference.cache
 C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty.Tests\obj\Debug\MvcRealty.Tests.dll
 C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty.Tests\obj\Debug\MvcRealty.Tests.pdb
+C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty.Tests\bin\Debug\Cassette.dll
+C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty.Tests\bin\Debug\AjaxMin.dll
+C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty.Tests\bin\Debug\Cassette.xml

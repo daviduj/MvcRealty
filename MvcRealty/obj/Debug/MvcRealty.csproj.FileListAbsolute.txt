@@ -56,6 +56,11 @@ C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty\bin\Microsoft.Owin.Security.O
 C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty\obj\Debug\MvcRealty.csprojResolveAssemblyReference.cache
 C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty\obj\Debug\MvcRealty.dll
 C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty\obj\Debug\MvcRealty.pdb
+C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty\bin\AjaxMin.dll
+C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty\bin\Cassette.Aspnet.dll
+C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty\bin\Cassette.dll
+C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty\bin\Cassette.Views.dll
+C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty\bin\Cassette.xml
+C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty\bin\Cassette.Views.xml
