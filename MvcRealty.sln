@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcRealty", "MvcRealty\MvcRealty.csproj", "{FEA12934-895B-4568-9FA6-53C2BFAC9B73}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Florida.Realty.Web", "MvcRealty\Florida.Realty.Web.csproj", "{FEA12934-895B-4568-9FA6-53C2BFAC9B73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcRealty.Tests", "MvcRealty.Tests\MvcRealty.Tests.csproj", "{2F3866C4-F020-4462-97EA-FAB83CAA5246}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Florida.Realty.Tests", "MvcRealty.Tests\Florida.Realty.Tests.csproj", "{2F3866C4-F020-4462-97EA-FAB83CAA5246}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

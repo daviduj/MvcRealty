@@ -92,9 +92,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MvcRealty\MvcRealty.csproj">
+    <ProjectReference Include="..\MvcRealty\Florida.Realty.Web.csproj">
       <Project>{FEA12934-895B-4568-9FA6-53C2BFAC9B73}</Project>
-      <Name>MvcRealty</Name>
+      <Name>Florida.Realty.Web</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
