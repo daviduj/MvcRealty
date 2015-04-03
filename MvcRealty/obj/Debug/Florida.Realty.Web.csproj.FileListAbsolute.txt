@@ -62,6 +62,5 @@ C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty\bin\Microsoft.Owin.Security.O
 C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty\obj\Debug\Florida.Realty.Web.csprojResolveAssemblyReference.cache
 C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty\obj\Debug\MvcRealty.dll
 C:\Users\dugalde\Downloads\Git\MvcRealty\MvcRealty\obj\Debug\MvcRealty.pdb

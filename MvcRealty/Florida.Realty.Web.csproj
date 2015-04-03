@@ -184,9 +184,11 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Extensions\ScriptExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\FileInclude.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -201,18 +203,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\styles\3rd\Site.css" />
-    <Content Include="Scripts\3rd\bootstrap.js" />
-    <Content Include="Scripts\3rd\bootstrap.min.js" />
     <Content Include="Content\styles\sass\application.scss" />
-    <None Include="Scripts\3rd\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\3rd\jquery-1.10.2.js" />
     <Content Include="Scripts\3rd\jquery-1.10.2.min.js" />
-    <None Include="Scripts\3rd\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\3rd\jquery.validate.js" />
-    <Content Include="Scripts\3rd\jquery.validate.min.js" />
-    <Content Include="Scripts\3rd\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\3rd\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\3rd\modernizr-2.6.2.js" />
+    <Content Include="Scripts\3rd\require.js" />
     <Content Include="Scripts\3rd\respond.js" />
     <Content Include="Scripts\3rd\respond.min.js" />
     <None Include="Scripts\3rd\_references.js" />
