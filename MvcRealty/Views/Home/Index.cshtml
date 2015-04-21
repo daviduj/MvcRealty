@@ -1,6 +1,11 @@
-﻿@{
+﻿@using MvcRealty.Extensions;
+@{
     ViewBag.Title = "Home Page";
+    Cassette.Views.Bundles.Reference("~/Scripts/compiled/Test/","require");
 }
+
+
+@Html.RegisterRequireModule("Test")
 
 <div class="jumbotron">
     <h1>ASP.NET</h1>
@@ -29,3 +34,21 @@
         <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
     </div>
 </div>
+<div class="tabs">
+    <ul class="tab-bar inline">
+
+        <li><a href="#" data-view="#tab-conflict-clearance-dashboard-action-items" class="selected">Tab 1</a></li>
+        <li><a href="#" data-view="#tab-conflict-clearance-dashboard-request-history">Tab 2</a></li>
+
+    </ul>
+
+    <div class="tab-bar-bottom"></div>
+    <div id="tab-conflict-clearance-dashboard-action-items" class="tab-container action-items-tab" style="display:block" data-tab-title-selector="#tab-conflict-clearance-dashboard-action-items-container">
+        Hey 1
+    </div>
+    <div id="tab-conflict-clearance-dashboard-request-history" class="tab-container request-history-tab" data-tab-title-selector="#tab-conflict-clearance-dashboard-request-history-container">
+        hey 2
+    </div>
+
+</div>
+

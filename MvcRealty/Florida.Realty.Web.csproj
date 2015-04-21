@@ -223,11 +223,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\styles\sass\_base.scss" />
+    <Content Include="Content\styles\sass\_mixins.scss" />
+    <Content Include="Content\styles\sass\_constants.scss" />
     <None Include="Scripts\3rd\_references.js" />
     <Content Include="Scripts\3rd\jquery-1.10.2.min.map" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\compiled\base.js" />
     <Content Include="Scripts\compiled\Test\Test.js" />
+    <Content Include="Scripts\coffee\base.coffee" />
+    <Content Include="Scripts\coffee\Test\Test.coffee" />
     <None Include="Scripts\jquery-2.1.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.3.js" />
     <Content Include="Scripts\jquery-2.1.3.min.js" />
@@ -279,7 +285,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Scripts\coffee\Test\Test.coffee" />
     <Content Include="Scripts\jquery-2.1.3.min.map" />
   </ItemGroup>
   <ItemGroup>

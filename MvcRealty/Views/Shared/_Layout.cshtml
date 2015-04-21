@@ -1,8 +1,17 @@
 ﻿@using MvcRealty.Extensions;
 <!DOCTYPE html>
 @{
+    // Casette registration
+
+    // CSS
+    Bundles.Reference("~/Content/styles/compiled/application.css", "head");
+
+    //JavaScript
+    // Edit bundle txt to specify order
     Bundles.Reference("~/Scripts/3rd/", "3rd");
-    Bundles.Reference("~/Scripts/compiled/Test", "require");
+
+    // Compiled from Coffee
+    Bundles.Reference("~/Scripts/compiled/", "require");
 }
 
 <html>
@@ -11,6 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
+    @Bundles.RenderStylesheets("head")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
@@ -42,7 +52,7 @@
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
-    <!--Here Start Loading js files-->>
+    <!--Here Start Loading js files-->
     @Bundles.RenderScripts("3rd")
     @Bundles.RenderScripts("require")
 

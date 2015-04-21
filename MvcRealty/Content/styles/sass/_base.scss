@@ -1,0 +1,419 @@
+﻿
+
+
+html, .content{
+
+  /*----- Headers -----*/
+  
+  h2 {
+    font-size: 1.5em;
+  } 
+
+  h3 {
+    font-size: 1.25em;
+    line-height: 2em;
+  } 
+
+  h4 {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-weight: bold;
+  } 
+
+  /*General Styles*/
+  input{
+    height: 15px;
+    border: 1px solid #AAA;
+    padding-left: 2px;
+    &.small { width: 100px; }
+    &.mini { width: 50px; }
+  }
+  select{
+    height: 20px;
+    &.medium{ width: 200px; }
+    &.small{ width: 120px; }
+  }
+  /*----- Lists in Columns -----*/
+
+  .inline {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+  }
+
+  .inline-content{
+    div{
+      display: inline-block;
+    }
+  }
+
+  ul.one-column {
+    > li { width: 65%; vertical-align: top; }
+  }
+
+  ul.two-columns {
+    > li { width: 48%; vertical-align: top; }
+  }
+
+  ul.three-columns {
+    > li { width: 33%; vertical-align: top; }
+  }
+
+  ul.four-columns {
+    > li { width: 25%; vertical-align: top; }
+  }
+
+
+  /*----- General Link Styling -----*/
+  .link{
+    color: $linkColor !important;
+    text-decoration: none !important;
+    cursor: pointer;
+    &:hover{ text-decoration: underline !important; }
+    &.disabled{
+      color: $inactive !important;
+      cursor: default;
+      &:hover{ text-decoration: none !important; }
+    }
+  }
+
+  a{ text-decoration: none !important; }
+
+  /*----- Tabs Styling -----*/
+    .tab-bar {
+      padding: 0;
+      position: relative;
+      width: 100%;
+	  z-index: 2;
+      &.grid-tabs {
+        margin-bottom: 0px !important;
+		> li:first-child{ margin-left: 0px; }
+		> li > a{
+		  background-color: #fff;
+	      &.selected {
+		    @include background-gradient($standardGrey1Dark, $standardMidGrey);
+			border-bottom: none;
+		  }
+		}
+      }
+      > li { 
+        float: left;
+        margin-right: 2px;
+		&:first-child {
+		  margin-left: 2px;
+		}
+      }
+      > li > a {
+        position: relative;
+        display: block;
+        padding: 5px 10px;
+        background-color: $moduleHeaderBackground;
+        color: #555;
+        text-decoration: none;
+        border: 1px solid $borderColor;
+        border-bottom: 0px;
+        font-weight: bold;
+        font-size: 1.15em;
+
+        &.selected {
+          color: $mainFontColor;
+		  background-color: #fff;
+		  border-bottom: 1px solid #fff;
+
+        }
+        &.disabled {
+          pointer-events: none;
+          cursor: default;
+        } 
+      }
+    }
+	.tab-bar-bottom{
+	  border-top: 1px solid $borderColor;
+	  margin-bottom: 20px;
+	  z-index: 1;
+	  position: relative;
+	  top: -1px;
+	}
+  /*----- Links in Form Styling -----*/
+    .form-link {
+      &.delete-template{
+        right: 7px;
+        position: absolute;
+        cursor: pointer;
+
+        &.address-deletion{
+          margin-top: 0;
+        }
+	      &.cell-button{
+		      padding: 0;
+		      border: 0;
+          margin-top: 2px;
+		      margin-right: 2px;
+		        &.tall-row{
+			        margin-top: 5px;
+			        margin-left: 5px;
+		        }
+	      }
+      }
+      &:hover { text-decoration: underline; }
+	    &.add-column-link:visited {
+          color: $linkColor;
+	    }
+    }
+
+  /*----- Box Module Styling -----*/
+    .box {
+  
+      border: 1px solid $borderColor;
+      clear: both;
+      position: relative;
+
+      &.box-grid-module{
+        .header{
+          font-size: 1.05em;
+          font-family: $standardFontFamily;
+          border-bottom: none;
+        }
+      }
+      .header {
+        @include standard-header($borderColor);
+        a { 
+          float: right;
+          padding-right: 5px;
+          font-size: .85em;
+          font-weight: normal;
+          &.form-link.link.add-column-link {
+            position: absolute;
+            right: 1px;
+            top: 1px;
+          }
+        }
+      }
+
+      .body {
+        padding: 10px 10px;
+        font-size: 1.05em;
+        .input-row {
+          margin-bottom: 10px;
+          font-size: 95%;
+          &.last-row { margin-bottom: 0; }
+          label { 
+            
+            font-weight: bold;
+            width: 120px;
+            select { width: 90%; }
+          }
+          input {
+           
+            width: 310px;
+            &.medium{ width: 197px; }
+            &.small{ width: 117px; }
+          }
+          select{
+            width: 314px;
+            vertical-align: middle;
+            &.medium{ width: 200px; }
+            &.small{ width: 120px; }
+          }
+          span.medium select{ width: 200px; }
+          &.full-row input, &.full-row textarea {
+            width: 650px;
+          }
+          input, select { 
+            font-size: 100%; 
+            min-width: 110px;
+            margin: 0;
+            margin-right: 10px; 
+            color: $mainFontColor;
+            &#Name{
+              position: relative;
+              left: -2px;
+            }
+          }
+          input[type="radio"] { width: 20px; } 
+        }
+      }
+
+    }
+
+  /*----- MDM-Specific styling within Kendo elements-----*/
+  .k-grid {
+    .delete-template {
+      position: relative;
+      display: block;
+      margin-top: -18px;
+      right: 0px;
+    }
+  }
+
+  .kendo-grid-module {
+    margin-bottom: 20px;
+    .header { font-size: 1.15em !important; }
+  }
+
+
+  /*----- Simple Item Styling -----*/
+  .strong { 
+    font-weight: bold;
+  }
+
+  .info-icon {
+    display: block; 
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+  }
+
+  .k-grid .info-icon {
+    top: 0;
+    left: -3px;
+  }
+
+
+  .datepicker{
+    background-repeat: no-repeat;
+    background-image: url("/Content/images/calendar-icon.png");
+    background-position: right;
+    background-position-y: -1px;
+    background-size: 20px;
+    cursor: pointer;
+  }
+
+  .template { 
+    display: none;
+  }
+
+  select.disabled, input.disabled{
+    background-color: #ebebe4;
+    border: 1px solid $borderColor;
+    color: $inactive !important;
+    cursor: default;
+  }
+
+  .helper-text { 
+    color: $inactive;
+  }
+
+  .divider-line{
+    border-top: 1px solid #CCC;
+    margin-bottom: 15px;
+    margin-top: 6px;
+  }
+
+  .tab-container {
+    display: none;
+  }
+
+  .loader {
+    background: url(/Content/images/loading-small.gif) center no-repeat;
+    min-width: 20px;
+    min-height: 20px;
+  }
+
+	.loader-big {
+    background: url(/Content/images/loading-big.gif) center no-repeat;
+    min-width: 100px;
+    min-height: 100px;
+  }
+
+  .hidden{
+    display: none !important;
+  }
+
+  .cleared{
+    clear: both;
+  }
+
+  .checkbox, input[type="checkbox"], input[type="radio"] {
+    border: none;
+  }
+
+  .no-padding{
+    padding: 0px !important;
+  }
+
+  li.no-bullet{
+    list-style: none;
+  }
+
+  .mag-glass{
+    background-image: url("/Content/Images/misc-icons-sprite.png");
+    background-position: 46px 0;
+    height: 14px;
+    width: 14px;
+    display: inline-block;
+    position: relative;
+    right: 32px;
+    top: 5px;
+    cursor: pointer;
+  }
+
+  input[type="button"]{
+    border: 2px outset buttonface;
+  }
+
+  .search-box-with-placeholder{
+    position: relative;
+    width: 374px;
+    height: 22px;
+  }
+
+  .search-popup{
+	  .search-box-with-placeholder{
+		  .search-box{
+			width: 370px;
+		  }
+	  }
+  }
+
+  .input-and-placeholder{
+    position: relative;
+  }
+  .placeholder-text{
+    color: $inactive;
+    font-style: italic;
+    font-weight: normal;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+
+    &.main-search{
+      font-size: 1.05em;
+    }
+  }
+
+  .impersonationOffset {
+    line-height: 1.5em;
+  }
+  .badge {
+	line-height: 1.5em;
+  }
+
+  .expander, .collapser{ cursor: pointer; }
+
+  .icon-spacer{ visibility: hidden; }
+
+  .inactive { color: $error; }
+}
+
+
+//JFTODO: This is a hack around the BXiWebShared fail.
+//        Once they fix their code this shouldn't be needed.
+#left-navigation{
+  &.sliderMenuContainer li.pager{
+    border-left: none;
+    border-right: none;
+  }
+  .linkItem.pager .tab-cell{
+    background: inherit;
+    &:hover{
+      background-color: #646565;
+    }
+  }
+  .selectedLinkItem .tab-cell{
+    background: $accentBlue !important;
+  }
+}
+//*********************************************************
