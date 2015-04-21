@@ -10,7 +10,7 @@ _ReSharper*
 .sass-cache
 *.Web/SASS/*.css
 *.Web/Coffee/*.js
-debug/
+[Dd]ebug/
 /packages/*
 !packages/repositories.config
 *.orig
