@@ -16,3 +16,4 @@ _ReSharper*
 *.orig
 *.StyleCop
 WebEssentials-Settings.json
+*.[Cc]ache
