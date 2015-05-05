@@ -65,8 +65,8 @@
             }
         });
     </script>
-    
 
+    @RenderSection("scripts", required: false)
     @Html.GetScriptIncludes()
     @Html.GetScriptBlocks()
     @Html.GetReadyScripts()

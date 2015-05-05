@@ -25,7 +25,7 @@ namespace MvcRealty
             bundles.AddPerIndividualFile<StylesheetBundle>("Content/styles/compiled", cssFilter, b => b.Media = "all");
 
             // Scripts
-            bundles.AddPerSubDirectory<ScriptBundle>("Scripts/3rd");
+            bundles.AddPerSubDirectory<ScriptBundle>("~/Scripts/3rd");
             bundles.AddPerSubDirectory<ScriptBundle>("~/Scripts/compiled");
 
             // To combine files, try something like this instead:
