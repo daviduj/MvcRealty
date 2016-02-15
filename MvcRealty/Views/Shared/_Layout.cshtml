@@ -54,16 +54,6 @@
     @Bundles.RenderScripts("3rd")
     @Bundles.RenderScripts("require")
 
-    <script type="text/javascript">
-        require.config({
-            shim: {
-                'jquery': {
-                    exports: function () { return $; }
-                }
-            }
-        });
-    </script>
-
     @RenderSection("scripts", required: false)
     @Html.GetScriptIncludes()
     @Html.GetScriptBlocks()

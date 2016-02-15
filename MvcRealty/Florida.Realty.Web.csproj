@@ -229,10 +229,6 @@
     <Content Include="Content\styles\sass\_constants.scss" />
     <Content Include="Scripts\3rd\knockout-3.3.0.debug.js" />
     <None Include="Scripts\3rd\_references.js" />
-    <Content Include="Scripts\compiled\base.js" />
-    <Content Include="Scripts\compiled\Test\Test.js" />
-    <Content Include="Scripts\coffee\base.coffee" />
-    <Content Include="Scripts\coffee\Test\Test.coffee" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -270,9 +266,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Scripts\coffee\common.coffee" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Scripts\compiled\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
