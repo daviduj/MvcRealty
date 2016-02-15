@@ -21,8 +21,10 @@ namespace MvcRealty
             // In production the content will be minified, but the files are not combined.
             // So you probably want to tweak these defaults!
             // Stylesheets
-            bundles.AddPerIndividualFile<StylesheetBundle>("Content/styles/3rd", cssFilter, b => b.Media = "all");
-            bundles.AddPerIndividualFile<StylesheetBundle>("Content/styles/compiled", cssFilter, b => b.Media = "all");
+            //bundles.AddPerIndividualFile<StylesheetBundle>("Content/styles/3rd", cssFilter, b => b.Media = "all");
+            //bundles.AddPerIndividualFile<StylesheetBundle>("Content/styles/compiled", cssFilter, b => b.Media = "all");
+            bundles.AddPerSubDirectory<StylesheetBundle>("Content/styles/3rd");
+            bundles.AddPerSubDirectory<StylesheetBundle>("Content/styles/compiled");
 
             // Scripts
             bundles.AddPerSubDirectory<ScriptBundle>("~/Scripts/3rd");
