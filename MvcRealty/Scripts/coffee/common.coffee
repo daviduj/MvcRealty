@@ -1,8 +1,7 @@
 ﻿# CoffeeScript
-require.config(
+require.config
     shim: 
         'jquery': 
             exports: 
               () -> 
                 return $
-);
