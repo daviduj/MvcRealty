@@ -202,8 +202,28 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\styles\3rd\Bootstrap\editor.png" />
+    <Content Include="Content\styles\3rd\Bootstrap\imagebrowser.png" />
+    <Content Include="Content\styles\3rd\Bootstrap\indeterminate.gif" />
+    <Content Include="Content\styles\3rd\Bootstrap\loading-image.gif" />
+    <Content Include="Content\styles\3rd\Bootstrap\loading.gif" />
+    <Content Include="Content\styles\3rd\Bootstrap\loading_2x.gif" />
+    <Content Include="Content\styles\3rd\Bootstrap\markers.png" />
+    <Content Include="Content\styles\3rd\Bootstrap\markers_2x.png" />
+    <Content Include="Content\styles\3rd\Bootstrap\slider-h.gif" />
+    <Content Include="Content\styles\3rd\Bootstrap\slider-v.gif" />
+    <Content Include="Content\styles\3rd\Bootstrap\sprite.png" />
+    <Content Include="Content\styles\3rd\Bootstrap\sprite_2x.png" />
+    <Content Include="Content\styles\3rd\Bootstrap\sprite_kpi.png" />
+    <Content Include="Content\styles\3rd\Bootstrap\sprite_kpi_2x.png" />
     <Content Include="Content\styles\3rd\bootstrap.css" />
     <Content Include="Content\styles\3rd\bootstrap.min.css" />
+    <Content Include="Content\styles\3rd\kendo.bootstrap.min.css" />
+    <Content Include="Content\styles\3rd\kendo.bootstrap.mobile.min.css" />
+    <Content Include="Content\styles\3rd\kendo.common-bootstrap.core.min.css" />
+    <Content Include="Content\styles\3rd\kendo.common-bootstrap.min.css" />
+    <Content Include="Content\styles\3rd\kendo.common.core.min.css" />
+    <Content Include="Content\styles\3rd\kendo.common.min.css" />
     <Content Include="Content\styles\compiled\application.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -213,7 +233,9 @@
     <Content Include="Icon.png" />
     <Content Include="Scripts\3rd\jquery-1.10.2.js" />
     <Content Include="Scripts\3rd\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\3rd\kendo.all.js" />
     <Content Include="Scripts\3rd\knockout-3.3.0.js" />
+    <Content Include="Scripts\3rd\knockout-kendo.min.js" />
     <Content Include="Scripts\3rd\modernizr-2.6.2.js" />
     <Content Include="Scripts\3rd\require.js" />
     <Content Include="Scripts\3rd\respond.js" />
@@ -228,7 +250,43 @@
     <Content Include="Content\styles\sass\_mixins.scss" />
     <Content Include="Content\styles\sass\_constants.scss" />
     <Content Include="Scripts\3rd\knockout-3.3.0.debug.js" />
+    <Content Include="Content\common\adaptive.less" />
+    <Content Include="Content\common\all.less" />
+    <Content Include="Content\common\base.less" />
+    <Content Include="Content\common\calendar.less" />
+    <Content Include="Content\common\core.less" />
+    <Content Include="Content\common\dataviz.less" />
+    <Content Include="Content\common\editor.less" />
+    <Content Include="Content\common\font-icons.less" />
+    <Content Include="Content\common\forms.less" />
+    <Content Include="Content\common\gantt.less" />
+    <Content Include="Content\common\grid.less" />
+    <Content Include="Content\common\imagebrowser.less" />
+    <Content Include="Content\common\inputs.less" />
+    <Content Include="Content\common\menu.less" />
+    <Content Include="Content\common\mixins.less" />
+    <Content Include="Content\common\notification.less" />
+    <Content Include="Content\common\panelbar.less" />
+    <Content Include="Content\common\pivot.less" />
+    <Content Include="Content\common\progressbar.less" />
+    <Content Include="Content\common\responsivepanel.less" />
+    <Content Include="Content\common\scheduler.less" />
+    <Content Include="Content\common\slider.less" />
+    <Content Include="Content\common\splitter.less" />
+    <Content Include="Content\common\spreadsheet.less" />
+    <Content Include="Content\common\tabstrip.less" />
+    <Content Include="Content\common\toolbar.less" />
+    <Content Include="Content\common\tooltip.less" />
+    <Content Include="Content\common\treelist.less" />
+    <Content Include="Content\common\treeview.less" />
+    <Content Include="Content\common\upload.less" />
+    <Content Include="Content\common\virtuallist.less" />
+    <Content Include="Content\common\window.less" />
+    <Content Include="Content\styles\3rd\images\kendoui.ttf" />
+    <Content Include="Content\styles\3rd\images\kendoui.woff" />
     <None Include="Scripts\3rd\_references.js" />
+    <Content Include="Scripts\compiled\common.js" />
+    <Content Include="Scripts\compiled\index.viewmodel.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -267,10 +325,10 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Scripts\coffee\common.coffee" />
+    <Content Include="Scripts\coffee\index.viewmodel.coffee" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Scripts\compiled\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

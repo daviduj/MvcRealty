@@ -1,4 +1,5 @@
 ﻿@using MvcRealty.Extensions;
+@using MvcRealty.Helpers;
 <!DOCTYPE html>
 @{
     // Casette registration
@@ -7,12 +8,10 @@
     Bundles.Reference("~/Content/styles/3rd", "head");
     Bundles.Reference("~/Content/styles/compiled", "head");
 
-    //JavaScript
-    // Edit bundle txt to specify order
-    Bundles.Reference("~/Scripts/3rd/", "3rd");
+    ////JavaScript
+    //// Edit bundle txt to specify order
+    //Bundles.Reference("~/Scripts/3rd/require.js", "3rd");
 
-    // Compiled from Coffee
-    Bundles.Reference("~/Scripts/compiled/", "require");
 }
 
 <html>
@@ -51,14 +50,21 @@
         </footer>
     </div>
     <!--Here Start Loading js files-->
-    @Bundles.RenderScripts("3rd")
-    @Bundles.RenderScripts("require")
+    <script type="text/javascript" src=@Url.Content("~/scripts/3rd/require.js")></script>
+    @{
+        var requiredScripts = (Dictionary<string, FileInclude>)Html.ViewContext.HttpContext.Items["requireScripts"];
+        string s = String.Join("\r\n", requiredScripts.OrderBy(x => x.Value.SortOrder).Select(x => x.Value.ResourceUrl));
+    }
+    <script type="text/javascript">
+        require(["@Url.Content("~/Scripts/compiled/common.js")"], function () {
+            @Html.Raw(s)
+        });
+    </script>
 
     @RenderSection("scripts", required: false)
     @Html.GetScriptIncludes()
     @Html.GetScriptBlocks()
     @Html.GetReadyScripts()
-    @Html.GetRequireScripts()
-    
+
 </body>
 </html>

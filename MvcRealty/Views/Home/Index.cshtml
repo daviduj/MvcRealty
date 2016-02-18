@@ -1,8 +1,9 @@
 ﻿@using MvcRealty.Extensions;
+@using MvcRealty.Helpers;
 @{
     ViewBag.Title = "Home Page";
-    //Cassette.Views.Bundles.Reference("~/Scripts/compiled/Test/","require");
 }
+@Html.RegisterRequireModule("../compiled/index.viewmodel")
 
 <div class="jumbotron">
     <h1>ASP.NET</h1>
@@ -31,6 +32,5 @@
     </div>
 </div>
 
-@section scripts{
-    @*@Html.RegisterRequireModule("")*@
-}
+<input data-bind="kendoDatePicker:{value:date, format:'MMM-dd-yyyy'}"/>
+<div data-bind="text:fullMessage"></div>

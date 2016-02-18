@@ -15,20 +15,22 @@ namespace MvcRealty
             // Please read http://getcassette.net/documentation/configuration
 
             // Make sure we don't pick up any SCSS files...
-            var cssFilter = new FileSearch() { Pattern = "*.css" };
+            //var cssFilter = new FileSearch() { Pattern = "*.css" };
 
-            // This default configuration treats each file as a separate 'bundle'.
-            // In production the content will be minified, but the files are not combined.
-            // So you probably want to tweak these defaults!
-            // Stylesheets
-            //bundles.AddPerIndividualFile<StylesheetBundle>("Content/styles/3rd", cssFilter, b => b.Media = "all");
-            //bundles.AddPerIndividualFile<StylesheetBundle>("Content/styles/compiled", cssFilter, b => b.Media = "all");
+            //// This default configuration treats each file as a separate 'bundle'.
+            //// In production the content will be minified, but the files are not combined.
+            //// So you probably want to tweak these defaults!
+            //// Stylesheets
+            ////bundles.AddPerIndividualFile<StylesheetBundle>("Content/styles/3rd", cssFilter, b => b.Media = "all");
+            ////bundles.AddPerIndividualFile<StylesheetBundle>("Content/styles/compiled", cssFilter, b => b.Media = "all");
             bundles.AddPerSubDirectory<StylesheetBundle>("Content/styles/3rd");
             bundles.AddPerSubDirectory<StylesheetBundle>("Content/styles/compiled");
 
-            // Scripts
-            bundles.AddPerSubDirectory<ScriptBundle>("~/Scripts/3rd");
-            bundles.AddPerSubDirectory<ScriptBundle>("~/Scripts/compiled");
+            //// Scripts
+            ////bundles.AddPerSubDirectory<ScriptBundle>("~/Scripts/3rd");
+            //bundles.Add<ScriptBundle>("~/Scripts/3rd/require.js");
+            //bundles.Add<ScriptBundle>("~/Scripts/compiled/common.js");
+            //bundles.AddPerSubDirectory<ScriptBundle>("~/Scripts/compiled");
 
             // To combine files, try something like this instead:
             //   bundles.Add<StylesheetBundle>("Content");
