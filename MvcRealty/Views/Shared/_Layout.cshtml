@@ -56,7 +56,7 @@
         string s = String.Join("\r\n", requiredScripts.OrderBy(x => x.Value.SortOrder).Select(x => x.Value.ResourceUrl));
     }
     <script type="text/javascript">
-        require(["@Url.Content("~/Scripts/compiled/common.js")"], function () {
+        require(["@Url.Content("~/Scripts/common/common.js")"], function () {
             @Html.Raw(s)
         });
     </script>

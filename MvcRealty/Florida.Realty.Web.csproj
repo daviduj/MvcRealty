@@ -253,8 +253,8 @@
     <Content Include="Content\styles\3rd\images\kendoui.ttf" />
     <Content Include="Content\styles\3rd\images\kendoui.woff" />
     <None Include="Scripts\3rd\_references.js" />
-    <Content Include="Scripts\compiled\common.js" />
-    <Content Include="Scripts\compiled\index.viewmodel.js" />
+    <Content Include="Scripts\common\common.js" />
+    <Content Include="Scripts\home\index.viewmodel.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -293,7 +293,6 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Scripts\coffee\common.coffee" />
-    <Content Include="Scripts\coffee\index.viewmodel.coffee" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -313,7 +312,6 @@
     <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
   </Target>
   <Target Name="AfterBuild">
-    <Exec Command="coffee -c -o Scripts/compiled ./Scripts/coffee" />
     <Exec Command="compass config --sass-dir=Content/styles/sass --css-dir=Content/styles/compiled --force" />
     <Exec Command="compass compile" />
   </Target>
